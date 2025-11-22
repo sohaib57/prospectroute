@@ -4,7 +4,7 @@ Fully responsive landing page and app scaffold built with React + Vite + Tailwin
 
 ## Live + Repo
 
-Live: [prospectroute on Netlify](https://692195f19027fb40f8536886--prospectroute.netlify.app/)
+Live: [prospectroute on Netlify](https://prospectroute.netlify.app/)
 
 Repo: [github.com/sohaib57/prospectroute](https://github.com/sohaib57/prospectroute)
 
