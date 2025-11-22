@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pr-yellow: #F9D948;
+  --color-pr-dark: #0B1B2B;
+  --color-pr-navy: #0E273C;
+  --color-pr-slate: #2B3B4A;
+  --font-sans: "Basier Circle", Manrope, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* Basier Circle font (place files in public/fonts) */
+@font-face {
+  font-family: "Basier Circle";
+  src:
+    url("/fonts/BasierCircle-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basier Circle";
+  src:
+    url("/fonts/BasierCircle-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basier Circle";
+  src:
+    url("/fonts/BasierCircle-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basier Circle";
+  src:
+    url("/fonts/BasierCircle-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Smooth scroll and font rendering */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Base font */
+body {
+  font-family: var(--font-sans);
+  font-synthesis-weight: auto;
+}
+
+/* No extra utilities; use Tailwind classes directly in components */
