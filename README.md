@@ -4,9 +4,9 @@ Fully responsive landing page and app scaffold built with React + Vite + Tailwin
 
 ## Live + Repo
 
-Live: add your Vercel/Netlify URL here
+Live: [prospectroute on Netlify](https://692195f19027fb40f8536886--prospectroute.netlify.app/)
 
-Repo: add your GitHub repo URL here
+Repo: [github.com/sohaib57/prospectroute](https://github.com/sohaib57/prospectroute)
 
 ## Tech Stack
 
