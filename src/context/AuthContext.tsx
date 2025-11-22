@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, PropsWithChildren } from 'react'
+import { createContext, useContext, useEffect, useState, type PropsWithChildren } from 'react'
 import { onAuthStateChanged, type User } from 'firebase/auth'
 import { auth, initAuthPersistence } from '../firebase'
 

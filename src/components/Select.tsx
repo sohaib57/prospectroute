@@ -1,4 +1,4 @@
-import { forwardRef, SelectHTMLAttributes } from 'react'
+import { forwardRef, type SelectHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 type Props = SelectHTMLAttributes<HTMLSelectElement> & {

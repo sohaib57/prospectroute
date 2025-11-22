@@ -1,17 +1,15 @@
-import { useTranslation } from 'react-i18next'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
 import { Button } from '../components/Button'
 import { Card } from '../components/Card'
 import { Input } from '../components/Input'
 import { Select } from '../components/Select'
-import { useState } from 'react'
+import { useState, type ChangeEvent, type FormEvent } from 'react'
 import { Topbar } from '../components/Topbar'
 import { SectionTag } from '../components/SectionTag'
-import { CheckIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
+
 
 export default function LandingPage() {
-	const { t } = useTranslation()
 	const [email, setEmail] = useState('')
 	const [howExpanded, setHowExpanded] = useState(false)
 	return (
@@ -22,7 +20,7 @@ export default function LandingPage() {
 			<section className="relative overflow-hidden bg-pr-yellow">
 				<div className="pointer-events-none absolute inset-0 opacity-20">
 					{/* placeholder pattern */}
-					<div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-pr-yellow" />
+					<div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-pr-yellow" />
 				</div>
 				<div className="relative mx-auto grid w-full max-w-[1200px] grid-cols-1 items-stretch gap-12 px-4 py-16 sm:px-6 md:grid-cols-[1.05fr_1fr] md:py-24 md:min-h-[620px] lg:px-8">
 					<div className="max-w-xl h-full flex flex-col justify-between">
@@ -59,7 +57,7 @@ export default function LandingPage() {
 							</h3>
 							<form
 								className="space-y-3 flex flex-col flex-1"
-								onSubmit={(e) => {
+								onSubmit={(e: FormEvent<HTMLFormElement>) => {
 									e.preventDefault()
 									if (email) alert(`Thanks! We'll email pricing to ${email}`)
 								}}
@@ -71,7 +69,7 @@ export default function LandingPage() {
 									label="Email"
 									placeholder="Type..."
 									value={email}
-									onChange={(e) => setEmail(e.target.value)}
+									onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
 								/>
 								<Input type="text" label="Mobile (used as password)" placeholder="Type..." />
 								<Select label="Agency employees" defaultValue="" className="hidden md:block">

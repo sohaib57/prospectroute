@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Button } from './Button'
 import { LanguageToggle } from './LanguageToggle'
@@ -73,6 +73,7 @@ export function Navbar() {
 					)}
 					{/* Mobile menu toggle on far right */}
 					<button
+						type="button"
 						className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-pr-navy"
 						aria-label="Open menu"
 						onClick={() => setOpen((v) => !v)}
